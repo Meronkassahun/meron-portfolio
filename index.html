@@ -9,21 +9,28 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
-      background: #f9f9f9;
+      color: #fff;
+      background: #2c2c2c;
     }
     header {
-      background: #000;
+      background: #1f1f1f;
       color: #fff;
       padding: 2rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
     }
-    header img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
+    .profile-pic {
+      width: 160px;
+      height: 200px;
+      background-color: #444;
       object-fit: cover;
-      margin-bottom: 1rem;
+      margin-right: 2rem;
+      border-radius: 8px;
+    }
+    .intro-text {
+      max-width: 400px;
     }
     section {
       padding: 2rem;
@@ -31,41 +38,48 @@
       margin: auto;
     }
     h2 {
-      border-bottom: 2px solid #ccc;
+      border-bottom: 2px solid #555;
       padding-bottom: 0.5rem;
       margin-top: 3rem;
     }
     .skills span {
       display: inline-block;
-      background: #e0e0e0;
+      background: #444;
       margin: 5px;
       padding: 5px 10px;
       border-radius: 5px;
     }
     .project {
-      background: #fff;
+      background: #1f1f1f;
       padding: 1rem;
       margin-top: 1rem;
-      border: 1px solid #ddd;
+      border: 1px solid #444;
+      border-radius: 5px;
+    }
+    video {
+      width: 100%;
+      margin-top: 1rem;
       border-radius: 5px;
     }
     footer {
       text-align: center;
       padding: 1rem;
-      background: #000;
-      color: #fff;
+      background: #1f1f1f;
+      color: #ccc;
     }
     a {
-      color: #0077cc;
+      color: #4fa3ff;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="my pf.jpg" alt="Meron Kassahun" />
-    <h1>Meron Kassahun</h1>
-    <p>Aspiring Software Engineer & Tech Enthusiast</p>
+    <img src="my pf.jpg" alt="Meron Kassahun" class="profile-pic" />
+    <div class="intro-text">
+      <h1>Meron Kassahun</h1>
+      <p>Aspiring Software Engineer & Tech Enthusiast</p>
+    </div>
   </header>
 
   <section>
@@ -90,16 +104,13 @@
     <h2>Projects</h2>
     <div class="project">
       <h3>Simple Portfolio Website</h3>
-  <video width="100%" controls>
-    <source src="web.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</section>
-
+      <video controls>
+        <source src="web.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <p>A clean, responsive HTML/CSS site showcasing my background and skills.</p>
       <p><strong>Status:</strong> You’re looking at it!</p>
     </div>
-    <!-- Add more projects as you build them -->
   </section>
 
   <section>
@@ -123,3 +134,4 @@
   </footer>
 </body>
 </html>
+
